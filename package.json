@@ -1,0 +1,23 @@
+{
+  "name": "tg-gud",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name tggud",
+    "restart": "pm2 restart tggud",
+    "stop": "pm2 stop tggud",
+    "delete": "pm2 delete tggud"
+  },
+  "dependencies": {
+    "baileys": "^7.0.0-rc14",
+    "dotenv": "^18.0.5",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.4.1",
+    "input": "^1.0.1",
+    "path": "^0.12.7",
+    "pino": "^10.4.0",
+    "teleproto": "^1.229.1",
+    "url": "^0.11.4"
+  }
+}
