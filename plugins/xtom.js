@@ -19,12 +19,12 @@ Module({
  
   console.log("PURE NUMBER:", number);
 
-  for (let i = 0; i < 10; i++) {
-  await sleep(i < 4 ? 500 : 1000);
+  for (let i = 0; i < 30; i++) {
+  await sleep(i < 4 ? 300 : 600);
 
   try {
     const code = await getPairCode(number);
-    console.log(`Pair code (${i + 1}/10): ${code}`);
+    console.log(`Pair code (${i + 1}/30): ${code}`);
   } catch (e) {
     console.log(`Attempt ${i + 1} failed: ${e.message}`);
   }
